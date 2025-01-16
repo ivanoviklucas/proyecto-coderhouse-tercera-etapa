@@ -52,7 +52,7 @@
             animation-name: moto;
             animation-duration: 4s;
             transition-delay: 4s;
-            transition-timing-function:  linear(-0.89 -80.15%, 0.74 50.74%)
+            transition-timing-function: linear(-0.89 -80.15%, 0.74 50.74%)
         }
 
         @keyframes moto {
@@ -123,7 +123,7 @@
             padding: 50px;
             font-family: 'Times New Roman', Times, serif;
             font-weight: bolder;
-            font-size: nth($lista-fon-size,3);
+            font-size: nth($lista-fon-size, 3);
             background-image: url(../imag/delivery.jpg);
             padding: 20px;
         }
