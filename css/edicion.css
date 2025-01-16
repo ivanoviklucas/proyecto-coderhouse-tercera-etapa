@@ -90,7 +90,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: #FFFFFF;
+  background-color: white;
   width: 100vw;
   height: 100vh;
   color: #0A0B0E;
@@ -126,6 +126,28 @@ body {
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   text-decoration: underline;
   font-size: 20px;
+}
+
+.animacion {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 0px;
+}
+.animacion img {
+  height: 100px;
+  width: 100px;
+  animation-name: moto;
+  animation-duration: 2s;
+}
+@keyframes moto {
+  from {
+    margin-right: 900%;
+    width: 100%;
+  }
+  to {
+    margin-left: 600%;
+    width: 50%;
+  }
 }
 
 .ventaja:hover {
@@ -351,6 +373,8 @@ header {
   text-align: center;
   align-items: center;
   color: #A0A5AB;
+  background: rgb(241, 238, 231);
+  background: radial-gradient(circle, rgb(241, 238, 231) 0%, rgb(85, 83, 81) 1%, rgba(13, 12, 12, 0.9360119048) 100%, rgb(13, 12, 12) 100%);
 }
 .footer-padre .cajas-footer img {
   height: 15vh;
@@ -366,7 +390,7 @@ header {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 65vh;
+    height: 70vh;
   }
   .lista-ventajas {
     display: flex;
@@ -388,6 +412,15 @@ header {
     font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
     text-decoration: underline;
     font-size: 15px;
+  }
+  .animacion {
+    margin-bottom: 20px;
+  }
+  .animacion img {
+    height: 50px;
+    width: 50px;
+    animation-name: moto;
+    animation-duration: 2s;
   }
   .footer-padre {
     display: flex;
