@@ -49,7 +49,9 @@
             height: 100px;
             width: 100px;
             animation-name: moto;
-            animation-duration: 2s;
+            animation-duration: 4s;
+            transition-delay: 4s;
+            transition-timing-function: ease-in-out
         }
 
         @keyframes moto {

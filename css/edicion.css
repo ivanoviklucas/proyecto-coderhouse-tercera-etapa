@@ -137,7 +137,9 @@ body {
   height: 100px;
   width: 100px;
   animation-name: moto;
-  animation-duration: 2s;
+  animation-duration: 4s;
+  transition-delay: 4s;
+  transition-timing-function: ease-in-out;
 }
 @keyframes moto {
   from {
@@ -390,7 +392,7 @@ header {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 70vh;
+    height: 75vh;
   }
   .lista-ventajas {
     display: flex;
@@ -419,8 +421,6 @@ header {
   .animacion img {
     height: 50px;
     width: 50px;
-    animation-name: moto;
-    animation-duration: 2s;
   }
   .footer-padre {
     display: flex;
@@ -495,14 +495,14 @@ header {
 }
 @media screen and (min-width: 551px) and (max-width: 977px) {
   header {
-    height: 60px;
+    height: 70px;
   }
   .contenedor-entrega {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 70vh;
+    height: 75vh;
   }
   .lista-ventajas {
     display: flex;
@@ -523,6 +523,10 @@ header {
     font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
     text-decoration: underline;
     font-size: 20px;
+  }
+  .animacion img {
+    height: 60x;
+    width: 60px;
   }
   .footer-padre {
     display: flex;
@@ -606,7 +610,7 @@ header {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 80vh;
+    height: 90vh;
   }
   .lista-ventajas {
     display: flex;
@@ -628,6 +632,13 @@ header {
     font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
     text-decoration: underline;
     font-size: 25px;
+  }
+  .animacion {
+    margin-bottom: 30px;
+  }
+  .animacion img {
+    height: 55px;
+    width: 55px;
   }
 }
 
