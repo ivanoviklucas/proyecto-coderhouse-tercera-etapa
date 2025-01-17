@@ -131,9 +131,9 @@ body {
 .animacion {
   display: flex;
   justify-content: flex-end;
-  margin-top: 0px;
 }
 .animacion img {
+  padding-top: 20px;
   height: 100px;
   width: 100px;
   animation-name: moto;
@@ -396,6 +396,7 @@ header {
     background-color: #778DA9;
   }
   .lista-ventajas {
+    padding-top: 15px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -423,6 +424,7 @@ header {
     margin-bottom: 20px;
   }
   .animacion img {
+    padding-top: 15px;
     height: 50px;
     width: 50px;
   }
@@ -506,7 +508,7 @@ header {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 75vh;
+    height: 80vh;
     background-color: #778DA9;
   }
   .lista-ventajas {
@@ -514,6 +516,8 @@ header {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+  }
+  .lista-ventajas .ventaja {
     background-color: #778DA9;
   }
   .lista-ventajas .ventaja img {
@@ -531,6 +535,7 @@ header {
     font-size: 20px;
   }
   .animacion img {
+    padding-bottom: 20px;
     height: 60x;
     width: 60px;
   }
@@ -625,6 +630,8 @@ header {
     justify-content: center;
     align-items: center;
     padding-top: 20px;
+  }
+  .lista-ventajas .ventaja {
     background-color: #778DA9;
   }
   .lista-ventajas .ventaja img {

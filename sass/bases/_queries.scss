@@ -10,11 +10,13 @@
     }
 
     .lista-ventajas {
+        padding-top: 15px;
         @include flex(flex, column, center, center);
         padding-top: 20px;
 
         .ventaja {
-              background-color: $color-cuarto;
+            background-color: $color-cuarto;
+
             img {
                 width: 50px;
                 height: 50px;
@@ -38,6 +40,7 @@
         margin-bottom: 20px;
 
         img {
+            padding-top: 15px;
             height: 50px;
             width: 50px;
         }
@@ -128,14 +131,16 @@
 
     .contenedor-entrega {
         @include flex (flex, column, center, center);
-        height: 75vh;
+        height: 80vh;
         background-color: $color-cuarto
     }
 
     .lista-ventajas {
         @include flex(flex, column, center, center);
-        background-color: $color-cuarto;
+
         .ventaja {
+            background-color: $color-cuarto;
+
             img {
                 width: 50px;
                 height: 50px;
@@ -158,6 +163,7 @@
     .animacion {
 
         img {
+            padding-bottom: 20px;
             height: 60x;
             width: 60px
         }
@@ -269,9 +275,10 @@
     .lista-ventajas {
         @include flex(flex, column, center, center);
         padding-top: 20px;
-        background-color: $color-cuarto;
 
         .ventaja {
+            background-color: $color-cuarto;
+
             img {
                 width: 50px;
                 height: 50px;
