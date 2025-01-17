@@ -6,6 +6,7 @@
     .contenedor-entrega {
         @include flex (flex, column, center, center);
         height: 75vh;
+        background-color: $color-cuarto;
     }
 
     .lista-ventajas {
@@ -13,6 +14,7 @@
         padding-top: 20px;
 
         .ventaja {
+            background-color: $color-cuarto;
             img {
                 width: 50px;
                 height: 50px;

@@ -393,6 +393,7 @@ header {
     justify-content: center;
     align-items: center;
     height: 75vh;
+    background-color: #778DA9;
   }
   .lista-ventajas {
     display: flex;
@@ -400,6 +401,9 @@ header {
     justify-content: center;
     align-items: center;
     padding-top: 20px;
+  }
+  .lista-ventajas .ventaja {
+    background-color: #778DA9;
   }
   .lista-ventajas .ventaja img {
     width: 50px;
