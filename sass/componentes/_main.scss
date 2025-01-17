@@ -71,6 +71,42 @@
 
     }
 
+    .grid-index {
+        width: 100%;
+        background-color: $color-fondo-grid;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+
+        .titulo-servicio {
+            position: relative;
+            align-items: center;
+            justify-content: center
+        }
+
+        .servicio-extencion {
+            grid-column: span 4;
+        }
+
+        .servicio {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            img {
+                height: 70%;
+                width: 50%;
+            }
+
+            h3 {
+                background: cover;
+                background-color: rgb(5, 7, 12, 0.40%);
+            }
+
+
+        }
+    }
+
 
     .ventaja:hover {
         transform: scale(1.1)

@@ -2,18 +2,20 @@ $color-principal: #0A0B0E;
 $color-secundario: #FFFFFF;
 $color-tersiario: #A0A5AB;
 $color-cuarto: #778DA9;
+$color-fondo-grid: #454545;
+$colores-contacto: #2A7F62, #C3ACCE, #DFD9E2;
+$lista-fon-size: 10px, 15px, 20px, 25px, 30px, 40px, 60px;
 
-$colores-contacto: #2A7F62,#C3ACCE,#DFD9E2;
-$lista-fon-size: 10px,15px,20px,25px,30px,40px,60px;
 /*mixin*/
-@mixin flex($flex,$direction,$justify, $align){
+@mixin flex($flex, $direction, $justify, $align) {
     display: $flex;
     flex-direction: $direction;
     justify-content: $justify;
     align-items: $align;
 }
 
-%flexbox {display:flex;
+%flexbox {
+    display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -23,6 +25,3 @@ $lista-fon-size: 10px,15px,20px,25px,30px,40px,60px;
     margin-top: 10px;
 
 }
-
-    
-
