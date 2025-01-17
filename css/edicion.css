@@ -507,12 +507,14 @@ header {
     justify-content: center;
     align-items: center;
     height: 75vh;
+    background-color: #778DA9;
   }
   .lista-ventajas {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    background-color: #778DA9;
   }
   .lista-ventajas .ventaja img {
     width: 50px;
@@ -615,6 +617,7 @@ header {
     justify-content: center;
     align-items: center;
     height: 90vh;
+    background-color: #778DA9;
   }
   .lista-ventajas {
     display: flex;
@@ -622,6 +625,7 @@ header {
     justify-content: center;
     align-items: center;
     padding-top: 20px;
+    background-color: #778DA9;
   }
   .lista-ventajas .ventaja img {
     width: 50px;
