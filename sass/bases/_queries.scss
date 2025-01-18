@@ -46,6 +46,23 @@
 
     }
 
+    .grid-index .servicio img {
+        height: 80%;
+        width: 80%;
+      }
+      
+      .grid-index .servicio h3 {
+        color: #0A0B0E;
+        background: cover;
+        background-color: rgba(5, 7, 12, 0.004);
+        font-size: 25px;
+        font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+        font-weight: bolder;
+        transform: translate(0px);
+        transition-delay: 2seg;
+        transition: transform 0.5s ease-in-out;
+      }
+
 
     
 
@@ -299,6 +316,7 @@
             }
         }
     }
+
 
     .animacion {
         margin-bottom: 30px;
