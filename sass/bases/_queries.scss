@@ -5,12 +5,11 @@
 
     .contenedor-entrega {
         @include flex (flex, column, center, center);
-        height: 75vh;
         background-color: $color-cuarto;
     }
 
     .lista-ventajas {
-        padding-top: 15px;
+        padding-top: 30px;
         @include flex(flex, column, center, center);
         padding-top: 20px;
 
@@ -46,6 +45,9 @@
         }
 
     }
+
+
+    
 
     .footer-padre {
         @include flex (flex, column, space-evenly, center);
@@ -131,7 +133,7 @@
 
     .contenedor-entrega {
         @include flex (flex, column, center, center);
-        height: 80vh;
+        height: 105vh;
         background-color: $color-cuarto
     }
 
@@ -268,7 +270,7 @@
 
     .contenedor-entrega {
         @include flex (flex, column, center, center);
-        height: 90vh;
+        height:125vh;
         background-color: $color-cuarto
     }
 

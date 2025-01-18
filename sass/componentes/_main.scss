@@ -3,11 +3,12 @@
         @include flex (flex, column, center, center);
         background-color: white;
         width: 100vw;
-        height: 100vh;
+        height: 95vh;
         color: $color-principal
     }
 
     .lista-ventajas {
+        padding-top: 20px;
         @include flex(flex, row, center, center);
 
         .ventaja {
@@ -99,14 +100,26 @@
             }
 
             h3 {
+                color:$color-principal;
                 background: cover;
                 background-color: rgb(5, 7, 12, 0.40%);
+                font-size: nth($lista-fon-size, 4);
+                font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+                font-weight: bolder;
+                transform: translate(0px);
+                transition-delay:2seg;
+                transition: transform 0.5s ease-in-out
+
+            }
             }
 
 
         }
-    }
+    
+    .grid-index .servicio h3:hover{
+     transform: translateY(-30px);
 
+    };
 
     .ventaja:hover {
         transform: scale(1.1)
