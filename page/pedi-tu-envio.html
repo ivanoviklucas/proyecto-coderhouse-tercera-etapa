@@ -30,7 +30,9 @@
                     <div class="offcanvas-body">
                         <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
                             <li class="nav-item">
-                                <a class="nav-link active" aria-current="page" href="./pedi-tu-envio.html">HACE TU PEDIDO</a>
+                                <a class="nav-link active" aria-current="page" href="./pedi-tu-envio.html">HACE TU
+                                    PEDIDO</a>
+                            </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="./destino.html">DESTINO</a>
                             </li>
@@ -40,6 +42,7 @@
                             <li class="nav-item">
                                 <a class="nav-link" href="./contacto.html">CONTACTO</a>
                             </li>
+                        </ul>
                     </div>
                 </div>
             </div>
@@ -48,41 +51,39 @@
     <main>
         <!-- aca iria un formulario de solicitud de viaje como todavia no se vimos formularios lo reemplace por texto-->
         <h2 class="solicitud">COMPLETA TU SOLICITUD</h2>
-        <form action="" method="">
+        <form action="#" method="post">
             <div>
-                <label for="zona-1">zona de retiro</label>
-                <select name="" id="">
-                    <option value="">CABA</option>
-                    <option value="">GBA SUR</option>
-                    <option value="">GBA Norte</option>
-                    <option value="">GBA oeste</option>
-                    <option value="">GBA Norte</option>
+                <label for="zona-1">Zona de retiro</label>
+                <select name="zona_retiro" id="zona-1">
+                    <option value="caba">CABA</option>
+                    <option value="gba_sur">GBA SUR</option>
+                    <option value="gba_norte">GBA Norte</option>
+                    <option value="gba_oeste">GBA Oeste</option>
+                    <option value="gba_este">GBA Este</option>
                 </select>
-                <label for="direccion-de-retiro">Direccion de retiro</label>
-                <input type="text" name="direccion" id="direccion de retiro">
-                <label for=" fecha-de-retiro">fecha de retiro</label>
-                <input type="date" value="28-11-2024" min="2024-11-28" max="2025-12-31">
-                <input type="time">
-                <label for="zona-2">zona de entrega</label>
-                <select name="" id="">
-                    <option value="">CABA</option>
-                    <option value="">GBA SUR</option>
-                    <option value="">GBA Norte</option>
-                    <option value="">GBA oeste</option>
-                    <option value="">GBA Norte</option>
+                <label for="direccion-de-retiro">Dirección de retiro</label>
+                <input type="text" name="direccion_retiro" id="direccion-de-retiro">
+                <label for="fecha-de-retiro">Fecha de retiro</label>
+                <input type="date" name="fecha_retiro" value="2024-11-28" min="2024-11-28" max="2025-12-31">
+                <input type="time" name="hora_retiro">
+                <label for="zona-2">Zona de entrega</label>
+                <select name="zona_entrega" id="zona-2">
+                    <option value="caba">CABA</option>
+                    <option value="gba_sur">GBA SUR</option>
+                    <option value="gba_norte">GBA Norte</option>
+                    <option value="gba_oeste">GBA Oeste</option>
+                    <option value="gba_este">GBA Este</option>
                 </select>
-                <label for="direccion-de-entrega">Direccion de entrega</label>
-                <input type="text" name="direccion" id="direccion-de-entrega">
-                <label for=" fecha-de-entrega">fecha de entrega</label>
-                <input type="date" min="2024-11-28" max="2025-12-31">
-                <input type="time"></input>
+                <label for="direccion-de-entrega">Dirección de entrega</label>
+                <input type="text" name="direccion_entrega" id="direccion-de-entrega">
+                <label for="fecha-de-entrega">Fecha de entrega</label>
+                <input type="date" name="fecha_entrega" min="2024-11-28" max="2025-12-31">
+                <input type="time" name="hora_entrega">
                 <label for="observaciones">Describe tu pedido</label>
-                <textarea name="observaciones" rows="4" cols¨="5"></textarea>
+                <textarea name="observaciones" rows="4" cols="5"></textarea>
                 <button type="submit">Enviar formulario</button>
             </div>
         </form>
-
-
     </main>
     <footer class="footer-padre">
         <div class="cajas-footer">
@@ -94,7 +95,7 @@
             <p>Hacemos envios en CABA y GBA. Entregamos comida y paqueteria</p>
         </div>
         <div class="cajas-footer">
-            <img src="https://metropolis.com.ar/wp-content/uploads/2017/03/google-maps-bs-as.jpg" talk="maps">
+            <img src="https://metropolis.com.ar/wp-content/uploads/2017/03/google-maps-bs-as.jpg" alt="maps">
         </div>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
