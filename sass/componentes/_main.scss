@@ -128,12 +128,26 @@
     }
 
     /* Destino*/
+    .alije-tu-destino{
+        background-color: $color-secundario;
+    .elije-tu-destino h2{
+        color: $color-principal;
+        background-color: $color-secundario;
+        font-size: nth($lista-fon-size, 6);
+        text-align: center;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-style: oblique;
+        margin-left: 15px;
+        margin-right: 15px;
+    }}
     .w-100 {
         width: 80vw;
-        height: 20vh;
+        height: 40vh;
         margin-top: 20px;
         object-fit: contain;
     }
+    .carousel-control-prev{width: 45%;}
+    .carousel-control-next{width: 45%;}
 
     .carousel.slide {
         margin-left: 15px;
@@ -219,11 +233,13 @@
     }
 
     /*Quienes-somos*/
+
     .contenedor-video {
         @include flex(flex, row, space-between, center);
 
         .texto {
             text-align: left;
+            .somos{margin-top: 20px;}
 
             p {
                 margin-left: 10px;
