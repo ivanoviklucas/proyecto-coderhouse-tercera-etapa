@@ -11,7 +11,7 @@
     }
 
     .lista-ventajas {
-   
+
         @include flex(flex, column, center, center);
 
 
@@ -33,7 +33,7 @@
                 color: black;
                 font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
                 text-decoration: underline;
-                font-size:nth($lista-fon-size, 2)
+                font-size: nth($lista-fon-size, 2)
             }
         }
     }
@@ -49,25 +49,32 @@
 
     }
 
-    .grid-index .servicio img {
-        height: 80%;
-        width: 80%;
-      }
-      
-      .grid-index .servicio h3 {
-        color: #0A0B0E;
-        background: cover;
-        background-color: rgba(5, 7, 12, 0.004);
-        font-size: 25px;
-        font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
-        font-weight: bolder;
-        transform: translate(0px);
-        transition-delay: 2seg;
-        transition: transform 0.5s ease-in-out;
-      }
+    .grid-index {
+         .titulo-servicio{background-color: rgb(5, 7, 12, 0.40%);}
+        .servicio {
+            img {
+                height: 80%;
+                width: 80%;
+            }
+
+            h3 {
+                color: #0A0B0E;
+                background: cover;
+                background-color: rgba(5, 7, 12, 0.004);
+                font-size: 25px;
+                font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+                font-weight: bolder;
+                transform: translate(0px);
+                transition-delay: 2seg;
+                transition: transform 0.5s ease-in-out;
+            }
+        }
+
+    }
 
 
-    
+
+
 
     .footer-padre {
         @include flex (flex, column, space-evenly, center);
@@ -159,6 +166,7 @@
 
     .lista-ventajas {
         @include flex(flex, column, center, center);
+
         .ventaja {
             background-color: $color-cuarto;
 
@@ -172,7 +180,8 @@
                 font-size: nth($lista-fon-size, 4);
             }
 
-            h2 {background-color: $color-cuarto;
+            h2 {
+                background-color: $color-cuarto;
                 color: black;
                 font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
                 text-decoration: underline;
@@ -182,29 +191,34 @@
     }
 
     .animacion {
-
         img {
             padding-bottom: 20px;
             height: 60x;
             width: 60px
         }
     }
-     .grid-index .servicio img {
-        height: 80%;
-        width: 80%;
-      }
-      
-      .grid-index .servicio h3 {
-        color: #0A0B0E;
-        background: cover;
-        background-color: rgba(5, 7, 12, 0.004);
-        font-size: 25px;
-        font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
-        font-weight: bolder;
-        transform: translate(0px);
-        transition-delay: 2seg;
-        transition: transform 0.5s ease-in-out;
-      }
+
+    .grid-index {
+        .servicio {
+            img {
+                height: 80%;
+                width: 80%;
+            }
+
+            h3 {
+                color: #0A0B0E;
+                background: cover;
+                background-color: rgba(5, 7, 12, 0.004);
+                font-size: 25px;
+                font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+                font-weight: bolder;
+                transform: translate(0px);
+                transition-delay: 2seg;
+                transition: transform 0.5s ease-in-out;
+            }
+        }
+
+    }
 
     .footer-padre {
         @include flex (flex, column, space-evenly, center);
@@ -306,7 +320,7 @@
 
     .contenedor-entrega {
         @include flex (flex, column, center, center);
-        height:130vh;
+        height: 100%;
         background-color: $color-cuarto
     }
 
@@ -327,7 +341,8 @@
                 font-size: nth($lista-fon-size, 6);
             }
 
-            h2 {background-color: $color-cuarto;
+            h2 {
+                background-color: $color-cuarto;
                 color: black;
                 font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
                 text-decoration: underline;
@@ -345,12 +360,13 @@
             width: 55px;
         }
     }
+
     .grid-index .servicio img {
         height: 80%;
         width: 80%;
-      }
-      
-      .grid-index .servicio h3 {
+    }
+
+    .grid-index .servicio h3 {
         color: #0A0B0E;
         background: cover;
         background-color: rgba(5, 7, 12, 0.004);
@@ -360,15 +376,19 @@
         transform: translate(0px);
         transition-delay: 2seg;
         transition: transform 0.5s ease-in-out;
-      }
+    }
 
+    @media screen and (min-width:1389px) {
+        .footer-padre {
+            @include flex (flex, row, space-evenly, center);
+        }
+    }
 
-}
-@media screen and (min-width:1389px){
-    .footer-padre {
-        @include flex (flex, row,space-evenly,center);
-        margin-top: 20px;
+    @media screen and (min-width:1389px) {
+        .footer-padre {
+            @include flex (flex, row, space-evenly, center);
+            margin-top: 20px;
 
-}
-
+        }
+    }
 }
