@@ -6,27 +6,28 @@
 }
 
 /*etiquetas generales*/
-h1 {
-    color: $color-secundario;
+h1 {color: $color-secundario;
+    font-size: nth($lista-fon-size,4);
+
+}
+
+
+h2 {color: $color-secundario;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif, Helvetica, sans-serif;
     text-align: center;
     margin: 15px
-}
-
-
-h2 {
-    color: $color-tersiario;
+   
 }
 
 h3 {
+    font-size: nth($lista-fon-size, 3);
+    font-family: Arial, Helvetica, sans-serif;
     color: $color-tersiario
 }
 
-h4 {
-    color: $color-principal;
-    font-size: nth($lista-fon-size, 3);
-    font-family: Arial, Helvetica, sans-serif;
-}
+h4 {color: $color-principal;}
+   
+
 
 p {
     color: $color-secundario;

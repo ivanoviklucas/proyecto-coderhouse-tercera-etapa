@@ -23,11 +23,12 @@
                 object-fit: cover;
             }
 
-            h4 {
+            h3 {
                 font-size: nth($lista-fon-size, 3);
             }
 
-            h5 {
+            h2 {
+                background-color: $color-cuarto;
                 color: black;
                 font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
                 text-decoration: underline;
@@ -151,7 +152,7 @@
 
     .contenedor-entrega {
         @include flex (flex, column, center, center);
-        height: 105vh;
+        height: 110vh;
         background-color: $color-cuarto
     }
 
@@ -167,11 +168,11 @@
                 object-fit: cover;
             }
 
-            h4 {
+            h3 {
                 font-size: nth($lista-fon-size, 4);
             }
 
-            h5 {
+            h2 {background-color: $color-cuarto;
                 color: black;
                 font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
                 text-decoration: underline;
@@ -207,7 +208,6 @@
 
     .footer-padre {
         @include flex (flex, column, space-evenly, center);
-        margin-top: 20px;
 
         .cajas-footer {
             @include flex(flex, column, center, center);
@@ -300,6 +300,8 @@
     }
 }
 
+
+
 @media screen and (min-width: 977px)and (max-width: 1389px) {
 
     .contenedor-entrega {
@@ -321,11 +323,11 @@
                 object-fit: cover;
             }
 
-            h4 {
+            h3 {
                 font-size: nth($lista-fon-size, 6);
             }
 
-            h5 {
+            h2 {background-color: $color-cuarto;
                 color: black;
                 font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
                 text-decoration: underline;

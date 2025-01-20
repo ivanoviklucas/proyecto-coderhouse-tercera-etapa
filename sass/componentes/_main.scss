@@ -27,12 +27,12 @@
                 object-fit: cover;
             }
 
-            h4 {
+            h3 {
                 color: $color-principal;
                 font-size: nth($lista-fon-size, 7);
             }
 
-            h5 {
+            h2 {
                 color: $color-principal;
                 font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
                 text-decoration: underline;
@@ -73,6 +73,7 @@
     }
 
     .grid-index {
+        height:50%;
         width: 100%;
         background-color: $color-fondo-grid;
         display: grid;
@@ -100,26 +101,27 @@
             }
 
             h3 {
-                color:$color-principal;
+                color: $color-principal;
                 background: cover;
                 background-color: rgb(5, 7, 12, 0.40%);
                 font-size: nth($lista-fon-size, 4);
                 font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
                 font-weight: bolder;
                 transform: translate(0px);
-                transition-delay:2seg;
+                transition-delay: 2seg;
                 transition: transform 0.5s ease-in-out
-
             }
-            }
-
-
         }
-    
-    .grid-index .servicio h3:hover{
-     transform: translateY(-30px);
 
-    };
+
+    }
+
+    .grid-index .servicio h3:hover {
+        transform: translateY(-30px);
+
+    }
+
+    ;
 
     .ventaja:hover {
         transform: scale(1.1)
