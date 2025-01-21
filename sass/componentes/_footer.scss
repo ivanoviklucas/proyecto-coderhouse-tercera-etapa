@@ -1,9 +1,9 @@
 
 .footer-padre {@include flex (flex,row,space-evenly, center);
-  margin-top: 20px;
    .cajas-footer {
         @include flex(flex, column, center, center);
-        width: 40%;
+        font-size: 20px;
+        width: 70%;
         height: 40%;
         padding: 30px;
         margin: 10px;

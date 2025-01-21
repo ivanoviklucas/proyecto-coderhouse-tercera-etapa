@@ -121,7 +121,8 @@ body {
 }
 .lista-ventajas .ventaja h3 {
   color: #0A0B0E;
-  font-size: 20px;
+  font-size: 25px;
+  font-weight: 500;
 }
 .lista-ventajas .ventaja h2 {
   color: #0A0B0E;
@@ -201,11 +202,12 @@ body {
 
 /* Destino*/
 .elije-tu-destino {
-  background-color: #FFFFFF;
+  background-color: #0A0B0E;
 }
-.elije-tu-destino .elije-tu-destino h2 {
-  color: #0A0B0E;
-  background-color: #FFFFFF;
+.elije-tu-destino h2 {
+  height: 30%;
+  background-color: #0A0B0E;
+  color: #FFFFFF;
   font-size: 40px;
   text-align: center;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -260,7 +262,7 @@ body {
 
 .solicitud {
   text-align: center;
-  margin-top: 5px;
+  margin-top: 20px;
 }
 
 form div {
@@ -427,14 +429,14 @@ header {
   flex-direction: row;
   justify-content: space-evenly;
   align-items: center;
-  margin-top: 20px;
 }
 .footer-padre .cajas-footer {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 40%;
+  font-size: 20px;
+  width: 70%;
   height: 40%;
   padding: 30px;
   margin: 10px;
@@ -499,11 +501,11 @@ header {
   .grid-index .titulo-servicio {
     background-color: rgba(5, 7, 12, 0.004);
   }
-  .grid-index .servicio img {
+  .grid-index .titulo-servicio .servicio img {
     height: 80%;
     width: 80%;
   }
-  .grid-index .servicio h3 {
+  .grid-index .titulo-servicio .servicio h3 {
     color: #0A0B0E;
     background: cover;
     background-color: rgba(5, 7, 12, 0.004);
@@ -527,15 +529,7 @@ header {
     justify-content: center;
     align-items: center;
     width: 40%;
-    height: 40%;
-    padding: 30px;
-    margin: 10px;
-    border: 2px solid white;
     font-size: 20px;
-    border-radius: 10vh;
-    text-align: center;
-    align-items: center;
-    color: gray;
   }
   .footer-padre .cajas-footer img {
     height: 15vh;
@@ -583,6 +577,9 @@ header {
   }
   .main-contacto {
     padding-top: 30px;
+  }
+  .solicitud {
+    margin-top: 10px;
   }
 }
 @media screen and (min-width: 551px) and (max-width: 977px) {
@@ -652,7 +649,7 @@ header {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    font-size: 25px;
+    font-size: 20px;
   }
   .footer-padre .cajas-footer img {
     height: 15vh;
@@ -714,6 +711,9 @@ header {
   .main-contacto .facebook img {
     height: 8vh;
     width: 14vw;
+  }
+  .solicitud {
+    margin-top: 10px;
   }
 }
 @media screen and (min-width: 977px) and (max-width: 1389px) {

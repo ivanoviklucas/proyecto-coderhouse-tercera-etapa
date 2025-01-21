@@ -50,345 +50,343 @@
     }
 
     .grid-index {
-         .titulo-servicio{background-color: rgb(5, 7, 12, 0.40%);}
-        .servicio {
-            img {
-                height: 80%;
-                width: 80%;
-            }
+        .titulo-servicio {
+            background-color: rgb(5, 7, 12, 0.40%);
 
-            h3 {
-                color: #0A0B0E;
-                background: cover;
-                background-color: rgba(5, 7, 12, 0.004);
-                font-size: 25px;
-                font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
-                font-weight: bolder;
-                transform: translate(0px);
-                transition-delay: 2seg;
-                transition: transform 0.5s ease-in-out;
-            }
-        }
+            .servicio {
+                img {
+                    height: 80%;
+                    width: 80%;
+                }
 
-    }
-
-
-
-
-
-    .footer-padre {
-        @include flex (flex, column, space-evenly, center);
-        margin-top: 30px;
-
-        .cajas-footer {
-            @include flex(flex, column, center, center);
-            width: 40%;
-            height: 40%;
-            padding: 30px;
-            margin: 10px;
-            border: 2px solid white;
-            font-size: nth($lista-fon-size, 3);
-            border-radius: 10vh;
-            text-align: center;
-            align-items: center;
-            color: gray;
-
-            img {
-                height: 15vh;
-                width: 15vw;
-            }
-        }
-
-    }
-
-    .solicitud {
-        padding-top: 15px
-    }
-
-    .zona {
-        @include flex(flex, column, space-around, center)
-    }
-
-    .contenedor-video {
-        @include flex(flex, column, space-between, center);
-
-        .texto {
-            text-align: left;
-
-            h2 {
-                padding-top: 30px;
-                padding-left: 30px;
-
-            }
-
-            p {
-                padding-left: 20px;
-                font-size: nth($lista-fon-size, 2);
-                margin-right: 15px;
-            }
-
-            ol li {
-                margin-left: 10px;
-                margin-right: 10px;
-                line-height: 50px;
-                font-size: 30px
+                h3 {
+                    color: #0A0B0E;
+                    background: cover;
+                    background-color: rgba(5, 7, 12, 0.004);
+                    font-size: 25px;
+                    font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+                    font-weight: bolder;
+                    transform: translate(0px);
+                    transition-delay: 2seg;
+                    transition: transform 0.5s ease-in-out;
+                }
             }
 
         }
-
-        video {
-            width: 400px;
-        }
     }
 
-    section h2 {
-        margin-left: 15px;
-        margin-right: 15px;
-    }
 
-    .main-contacto {
-        padding-top: 30px
-    }
 
-}
 
-@media screen and (min-width: 551px)and (max-width: 977px) {
+        .footer-padre {
+            @include flex (flex, column, space-evenly, center);
+            margin-top: 30px;
 
-    header {
-        height: 60px
-    }
-
-    .contenedor-entrega {
-        @include flex (flex, column, center, center);
-        height: 125vh;
-        background-color: $color-cuarto
-    }
-
-    .lista-ventajas {
-        @include flex(flex, column, center, center);
-
-        .ventaja {
-            background-color: $color-cuarto;
-
-            img {
-                width: 50px;
-                height: 50px;
-                object-fit: cover;
-            }
-
-            h3 {
-                font-size: nth($lista-fon-size, 4);
-            }
-
-            h2 {
-                background-color: $color-cuarto;
-                color: black;
-                font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-                text-decoration: underline;
+            .cajas-footer {
+                @include flex(flex, column, center, center);
+                width: 40%;
                 font-size: nth($lista-fon-size, 3);
-            }
-        }
-    }
 
-    .animacion {
-        img {
-            padding-bottom: 20px;
-            height: 60x;
-            width: 60px
-        }
-    }
-
-    .grid-index {
-        .servicio {
-            img {
-                height: 80%;
-                width: 80%;
+                img {
+                    height: 15vh;
+                    width: 15vw;
+                }
             }
 
-            h3 {
-                color: #0A0B0E;
-                background: cover;
-                background-color: rgba(5, 7, 12, 0.004);
-                font-size: 25px;
-                font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
-                font-weight: bolder;
-                transform: translate(0px);
-                transition-delay: 2seg;
-                transition: transform 0.5s ease-in-out;
+        }
+
+        .solicitud {
+            padding-top: 15px
+        }
+
+        .zona {
+            @include flex(flex, column, space-around, center)
+        }
+
+        .contenedor-video {
+            @include flex(flex, column, space-between, center);
+
+            .texto {
+                text-align: left;
+
+                h2 {
+                    padding-top: 30px;
+                    padding-left: 30px;
+
+                }
+
+                p {
+                    padding-left: 20px;
+                    font-size: nth($lista-fon-size, 2);
+                    margin-right: 15px;
+                }
+
+                ol li {
+                    margin-left: 10px;
+                    margin-right: 10px;
+                    line-height: 50px;
+                    font-size: 30px
+                }
+
+            }
+
+            video {
+                width: 400px;
             }
         }
 
+        section h2 {
+            margin-left: 15px;
+            margin-right: 15px;
+        }
+
+        .main-contacto {
+            padding-top: 30px
+        }
+        .solicitud{margin-top: 10px;}
+
     }
 
-    .footer-padre {
-        @include flex (flex, column, space-evenly, center);
+    @media screen and (min-width: 551px)and (max-width: 977px) {
 
-        .cajas-footer {
+        header {
+            height: 60px
+        }
+
+        .contenedor-entrega {
+            @include flex (flex, column, center, center);
+            height: 125vh;
+            background-color: $color-cuarto
+        }
+
+        .lista-ventajas {
             @include flex(flex, column, center, center);
-            font-size: nth($lista-fon-size, 4);
 
-
-            img {
-                height: 15vh;
-                width: 15vw;
-            }
-        }
-
-    }
-
-    .contenedor-video {
-        @include flex(flex, column, space-between, center);
-
-        .texto {
-            text-align: left;
-
-            h2 {
-                padding-top: 30px;
-                padding-left: 30px;
-
-            }
-
-            p {
-                padding-left: 20px;
-                font-size: 25px;
-                margin-right: 25px;
-            }
-
-            ol li {
-                margin-left: 10px;
-                margin-right: 10px;
-                line-height: 50px;
-                font-size: nth($lista-fon-size, 5);
-            }
-
-        }
-
-        video {
-            width: 500px;
-        }
-    }
-
-    .main-contacto {
-        .whatsapp {
-            height: 15vh;
-
-            h4 {
-                font-size: nth($lista-fon-size, 5);
-            }
-
-            img {
-                height: 8vh;
-                width: 10vw
-            }
-        }
-    }
-
-    .main-contacto {
-        .instagram {
-            height: 15vh;
-
-            .titulo-negro {
-                font-size: nth($lista-fon-size, 5);
-            }
-
-            img {
-                height: 12vh;
-                width: 20vw
-            }
-        }
-    }
-
-    .main-contacto {
-        .facebook {
-            height: 15vh;
-
-            h4 {
-                font-size: nth($lista-fon-size, 5);
-            }
-
-            img {
-                height: 8vh;
-                width: 14vw;
-            }
-        }
-    }
-}
-
-
-
-@media screen and (min-width: 977px)and (max-width: 1389px) {
-
-    .contenedor-entrega {
-        @include flex (flex, column, center, center);
-        height: 100%;
-        background-color: $color-cuarto
-    }
-
-    .lista-ventajas {
-        @include flex(flex, column, center, center);
-        padding-top: 20px;
-
-        .ventaja {
-            background-color: $color-cuarto;
-
-            img {
-                width: 50px;
-                height: 50px;
-                object-fit: cover;
-            }
-
-            h3 {
-                font-size: nth($lista-fon-size, 6);
-            }
-
-            h2 {
+            .ventaja {
                 background-color: $color-cuarto;
-                color: black;
-                font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-                text-decoration: underline;
-                font-size: nth($lista-fon-size, 4);
+
+                img {
+                    width: 50px;
+                    height: 50px;
+                    object-fit: cover;
+                }
+
+                h3 {
+                    font-size: nth($lista-fon-size, 4);
+                }
+
+                h2 {
+                    background-color: $color-cuarto;
+                    color: black;
+                    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                    text-decoration: underline;
+                    font-size: nth($lista-fon-size, 3);
+                }
+            }
+        }
+
+        .animacion {
+            img {
+                padding-bottom: 20px;
+                height: 60x;
+                width: 60px
+            }
+        }
+
+        .grid-index {
+            .servicio {
+                img {
+                    height: 80%;
+                    width: 80%;
+                }
+
+                h3 {
+                    color: #0A0B0E;
+                    background: cover;
+                    background-color: rgba(5, 7, 12, 0.004);
+                    font-size: 25px;
+                    font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+                    font-weight: bolder;
+                    transform: translate(0px);
+                    transition-delay: 2seg;
+                    transition: transform 0.5s ease-in-out;
+                }
+            }
+
+        }
+
+        .footer-padre {
+            @include flex (flex, column, space-evenly, center);
+
+            .cajas-footer {
+                @include flex(flex, column, center, center);
+                font-size: nth($lista-fon-size, 3);
+
+
+                img {
+                    height: 15vh;
+                    width: 15vw;
+                }
+            }
+
+        }
+
+        .contenedor-video {
+            @include flex(flex, column, space-between, center);
+
+            .texto {
+                text-align: left;
+
+                h2 {
+                    padding-top: 30px;
+                    padding-left: 30px;
+
+                }
+
+                p {
+                    padding-left: 20px;
+                    font-size: 25px;
+                    margin-right: 25px;
+                }
+
+                ol li {
+                    margin-left: 10px;
+                    margin-right: 10px;
+                    line-height: 50px;
+                    font-size: nth($lista-fon-size, 5);
+                }
+
+            }
+
+            video {
+                width: 500px;
+            }
+        }
+
+        .main-contacto {
+            .whatsapp {
+                height: 15vh;
+
+                h4 {
+                    font-size: nth($lista-fon-size, 5);
+                }
+
+                img {
+                    height: 8vh;
+                    width: 10vw
+                }
+            }
+        }
+
+        .main-contacto {
+            .instagram {
+                height: 15vh;
+
+                .titulo-negro {
+                    font-size: nth($lista-fon-size, 5);
+                }
+
+                img {
+                    height: 12vh;
+                    width: 20vw
+                }
+            }
+        }
+
+        .main-contacto {
+            .facebook {
+                height: 15vh;
+
+                h4 {
+                    font-size: nth($lista-fon-size, 5);
+                }
+
+                img {
+                    height: 8vh;
+                    width: 14vw;
+                }
+            }
+        }
+        .solicitud {
+            margin-top: 10px
+        }
+    }
+
+
+
+    @media screen and (min-width: 977px)and (max-width: 1389px) {
+
+        .contenedor-entrega {
+            @include flex (flex, column, center, center);
+            height: 100%;
+            background-color: $color-cuarto
+        }
+
+        .lista-ventajas {
+            @include flex(flex, column, center, center);
+            padding-top: 20px;
+
+            .ventaja {
+                background-color: $color-cuarto;
+
+                img {
+                    width: 50px;
+                    height: 50px;
+                    object-fit: cover;
+                }
+
+                h3 {
+                    font-size: nth($lista-fon-size, 6);
+                }
+
+                h2 {
+                    background-color: $color-cuarto;
+                    color: black;
+                    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                    text-decoration: underline;
+                    font-size: nth($lista-fon-size, 4);
+                }
+            }
+        }
+
+
+        .animacion {
+            margin-bottom: 30px;
+
+            img {
+                height: 55px;
+                width: 55px;
+            }
+        }
+
+        .grid-index .servicio img {
+            height: 80%;
+            width: 80%;
+        }
+
+        .grid-index .servicio h3 {
+            color: #0A0B0E;
+            background: cover;
+            background-color: rgba(5, 7, 12, 0.004);
+            font-size: 25px;
+            font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+            font-weight: bolder;
+            transform: translate(0px);
+            transition-delay: 2seg;
+            transition: transform 0.5s ease-in-out;
+        }
+
+        @media screen and (min-width:1389px) {
+            .footer-padre {
+                @include flex (flex, row, space-evenly, center);
+            }
+        }
+
+        @media screen and (min-width:1389px) {
+            .footer-padre {
+                @include flex (flex, row, space-evenly, center);
+                margin-top: 20px;
+
             }
         }
     }
-
-
-    .animacion {
-        margin-bottom: 30px;
-
-        img {
-            height: 55px;
-            width: 55px;
-        }
-    }
-
-    .grid-index .servicio img {
-        height: 80%;
-        width: 80%;
-    }
-
-    .grid-index .servicio h3 {
-        color: #0A0B0E;
-        background: cover;
-        background-color: rgba(5, 7, 12, 0.004);
-        font-size: 25px;
-        font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
-        font-weight: bolder;
-        transform: translate(0px);
-        transition-delay: 2seg;
-        transition: transform 0.5s ease-in-out;
-    }
-
-    @media screen and (min-width:1389px) {
-        .footer-padre {
-            @include flex (flex, row, space-evenly, center);
-        }
-    }
-
-    @media screen and (min-width:1389px) {
-        .footer-padre {
-            @include flex (flex, row, space-evenly, center);
-            margin-top: 20px;
-
-        }
-    }
-}
