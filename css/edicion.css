@@ -341,6 +341,7 @@ form section ul li {
   margin-left: 20px;
 }
 .main-contacto .whatsapp {
+  margin-top: 25px;
   background-color: #2A7F62;
 }
 .main-contacto .whatsapp img {
@@ -580,6 +581,10 @@ header {
   }
   .solicitud {
     margin-top: 10px;
+  }
+  .tiempo-valioso h2 {
+    background-color: #0A0B0E;
+    color: #FFFFFF;
   }
 }
 @media screen and (min-width: 551px) and (max-width: 977px) {

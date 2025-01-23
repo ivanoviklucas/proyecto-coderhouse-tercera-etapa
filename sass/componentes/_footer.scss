@@ -1,24 +1,26 @@
+.footer-padre {
+  @include flex (flex, row, space-evenly, center);
 
-.footer-padre {@include flex (flex,row,space-evenly, center);
-   .cajas-footer {
-        @include flex(flex, column, center, center);
-        font-size: 20px;
-        width: 70%;
-        height: 40%;
-        padding: 30px;
-        margin: 10px;
-        border: 2px solid $color-secundario;
-        font-size: nth($colores-contacto, 3);
-        border-radius: 10vh;
-        text-align: center;
-        align-items: center;
-        color: $color-tersiario;
-        background: rgb(241,238,231);
-        background: radial-gradient(circle, rgba(241,238,231,1) 0%, rgba(85,83,81,1) 1%, rgba(13,12,12,0.9360119047619048) 100%, rgba(13,12,12,1) 100%);
-        img{
-            height: 15vh;
-            width: 15vw;
-        }
+  .cajas-footer {
+    @include flex(flex, column, center, center);
+    font-size: 20px;
+    width: 70%;
+    height: 40%;
+    padding: 30px;
+    margin: 10px;
+    border: 2px solid $color-secundario;
+    font-size: nth($colores-contacto, 3);
+    border-radius: 10vh;
+    text-align: center;
+    align-items: center;
+    color: $color-tersiario;
+    background: rgb(241, 238, 231);
+    background: radial-gradient(circle, rgba(241, 238, 231, 1) 0%, rgba(85, 83, 81, 1) 1%, rgba(13, 12, 12, 0.9360119047619048) 100%, rgba(13, 12, 12, 1) 100%);
+
+    img {
+      height: 15vh;
+      width: 15vw;
+    }
   }
-  
+
 }

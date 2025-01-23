@@ -37,7 +37,7 @@
                 color: $color-principal;
                 font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
                 text-decoration: underline;
-                font-size: nth($lista-fon-size, 3);
+                font-size: nth($lista-fon-size,3);
             }
 
         }
@@ -131,7 +131,9 @@
     /* Destino*/
     .elije-tu-destino {
         background-color: $color-principal;
-        h2 {height: 30%;
+
+        h2 {
+            height: 30%;
             background-color: $color-principal;
             color: $color-secundario;
             font-size: nth($lista-fon-size, 6);
@@ -279,6 +281,7 @@
         margin-left: 20px;
 
         .whatsapp {
+            margin-top: 25px;
             @extend %flexbox;
             background-color: nth($colores-contacto, 1);
 
